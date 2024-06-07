@@ -1,7 +1,8 @@
-### Objetivo: Deve ser realizada uma entrega e apresentação do trabalho final, contendo toda a estrutura de Hardware e Software, ou seja: Banco de dados conectado com o Flask e armazenando os dados de sensores e atuadores, Hardware funcional com pelo menos 2 sensores e 2 atuadores (no mínimo) e interface Web Flask.  
-## Observações: Pode ser utilizado o simulador Wokwi para o desenvolvimento e validação da parte de hardware do projeto final.   
+### Objetivo: Deve ser realizada uma entrega e apresentação do trabalho final, contendo toda a estrutura de Hardware e Software, ou seja: Banco de dados conectado com o Flask e armazenando os dados de sensores e atuadores, Hardware funcional com pelo menos 2 sensores e 2 atuadores (no mínimo) e interface Web Flask.
 
-### Deve ser entregue um relatório final, o relatório deve conter a descrição completa do projeto, bem como das ferramentas utilizadas. O que deve conter no relatório e ser entregue:
+### Observações: Pode ser utilizado o simulador Wokwi para o desenvolvimento e validação da parte de hardware do projeto final.   
+
+## Deve ser entregue um relatório final, o relatório deve conter a descrição completa do projeto, bem como das ferramentas utilizadas. O que deve conter no relatório e ser entregue:
 
 - Web (2 pontos referente ao relatório): 
   - [ ] Aplicação Flask: controladores (Blueprints) e visualizações (páginas HTML).
