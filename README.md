@@ -5,7 +5,7 @@
 ## Deve ser entregue um relatório final, o relatório deve conter a descrição completa do projeto, bem como das ferramentas utilizadas. O que deve conter no relatório e ser entregue:
 
 - Web (2 pontos referente ao relatório): 
-  - [x] Aplicação Flask: controladores (Blueprints) e visualizações (páginas HTML).
+  - [X] Aplicação Flask: controladores (Blueprints) e visualizações (páginas HTML).
   - [ ] No mínimo 4 páginas de cadastro e 4 páginas de listagem. 
   - [ ] Página inicial contendo as informações do projeto. 
   - [x] Página para acionamento e recuperação de dados históricos dos Atuadores e Sensores. 
