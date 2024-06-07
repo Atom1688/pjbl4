@@ -5,30 +5,31 @@
 ## Deve ser entregue um relatório final, o relatório deve conter a descrição completa do projeto, bem como das ferramentas utilizadas. O que deve conter no relatório e ser entregue:
 
 - Web (2 pontos referente ao relatório): 
-  - [ ] Aplicação Flask: controladores (Blueprints) e visualizações (páginas HTML).
+  - [x] Aplicação Flask: controladores (Blueprints) e visualizações (páginas HTML).
   - [ ] No mínimo 4 páginas de cadastro e 4 páginas de listagem. 
   - [ ] Página inicial contendo as informações do projeto. 
-  - [ ] Página para acionamento e recuperação de dados históricos dos Atuadores e Sensores. 
+  - [x] Página para acionamento e recuperação de dados históricos dos Atuadores e Sensores. 
   - [ ] Controle de Acesso com o Flask-Login.
   - OBS: se algum grupo utilizar outra tecnologia, considerações e ponderações específicas serão realizadas
 
-- Banco de Dados (2 pontos referente ao relatório): 
-  - [ ] Modelos SQLAlchemy (mínimo 6 modelos).
-  - [ ] Métodos para inserir, selecionar, editar e excluir os dados do banco de dados.
+- Banco de Dados (2 pontos referente ao relatório):
+  - [x] Modelos SQLAlchemy (mínimo 6 modelos).
+  - Será criado mais modelos pro MQTT, que precisarão de CRUD
+  - [x] Métodos para inserir, selecionar, editar e excluir os dados do banco de dados.
   - [ ] Modelagem Conceitual, Lógica e Física do banco de dados.
 
 - Hardware (2 pontos referente ao relatório):
-  - [ ] Esquemática do Hardware utilizado – sensores, atuadores e microcontrolador.
-  - [ ] No mínimo 2 sensores e dois atuadores.
-  - [ ] Tópicos MQTT utilizados (nomes e explicações de funcionalidades).
+  - [x] Esquemática do Hardware utilizado – sensores, atuadores e microcontrolador.
+  - [x] No mínimo 2 sensores e dois atuadores.
+  - [x] Tópicos MQTT utilizados (nomes e explicações de funcionalidades).
   - [ ] Todas as entregas exigidas no PjBL 3, agora integrado ao flask. O PjBL3 pode ser uma seção do relatório final.
 
 - Integração (2 pontos referente ao relatório):
   - [ ] Integração dos três tópicos principais da disciplina apresentados anteriormente: Web, Banco de Dados, Hardware.
-  - [ ] Comunicação IoT com o Flask-Mqtt: os dados dos sensores e atuadores devem ser processados pela aplicação flask e salvos no banco de dados, bem como a aplicação flask deve publicar mensagens (solicitações), por meio de tópicos específicos, solicitando ações do hardware.
+  - [x] Comunicação IoT com o Flask-Mqtt: os dados dos sensores e atuadores devem ser processados pela aplicação flask e salvos no banco de dados, bem como a aplicação flask deve publicar mensagens (solicitações), por meio de tópicos específicos, solicitando ações do hardware.
 
 - TDEs desenvolvidos ao longo do semestre (2 pontos referente ao relatório): 
   - Deve conter um capítulo/sessão para cada TDE, conforme apresentado no início da disciplina.
-    - [ ] TDE 1 – Entendendo o projeto final e seus requisitos de Hardware Turma U
+    - [ ] TDE1 – Entendendo o projeto final e seus requisitos de Hardware Turma U
     - [ ] TDE2 - Design de Aplicações Web
     - [ ] TDE3 - Flask Login com Role
