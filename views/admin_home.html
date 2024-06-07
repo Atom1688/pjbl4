@@ -1,0 +1,61 @@
+<!-- admin_home -->
+{% extends"base.html" %}
+{% block content%}
+<h1>Bem-vindo, {{user}}</h1>
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    li.sensor a {
+        background-color: #4CAF50;
+    }
+
+    li.actuator a {
+        background-color: #4c56af
+    }
+
+    li.user a {
+        background-color:  #e3943a;
+    }
+
+    li.mqtt a {
+        background-color:  #2db998;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        padding: 10px 20px;
+        margin: auto;
+        width: 60%;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    li a:hover {
+        opacity: 0.8;
+    }
+</style>
+<ul>
+    <li class="sensor"><a href="/sensors">Listar Sensores</a></li>
+    <li  class="sensor"><a href="/register_sensor">Cadastrar Sensor</a></li>
+    
+    <li class="actuator"><a href="/actuators">Listar Atuadores</a></li>
+    <li class="actuator"><a href="/register_actuator">Cadastrar Atuador</a></li>
+
+    <li class="user"><a href="/list_users">Listar Usuários</a></li>
+    <li class="user"><a href="/register_user">Cadastrar Usuário</a></li>
+
+    <li class="sensor"> <a href="/history_read">Dados Históricos</a></li>
+	<li class="sensor"> <a href="/history_write">Atuações Históricas</a></li>
+    
+    <li class="mqtt"><a href="/mqtt_display">Exibir MQTT</a></li>
+    <li class="mqtt"><a href="/mqtt_publish">Enviar MQTT</a></li>
+</ul>
+{% endblock%}

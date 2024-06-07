@@ -1,0 +1,80 @@
+<!-- mqtt_publish -->
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0 5px;
+        transition: 100ms;
+    }
+
+    .button.ok {
+        background-color: green;
+        color: white;
+    }
+
+    .button.atencao {
+        background-color: yellow;
+        color: black;
+    }
+
+    .button.alerta {
+        background-color: red;
+        color: white;
+    }
+
+    .button.emergencia {
+        background-color: black;
+        color: white;
+    }
+
+    .button:hover {
+        opacity: 0.8;
+    }
+
+    .button:active {
+        opacity: 0.5;
+    }
+
+</style>
+<h1>Enviar MQTT</h1>
+<button id="ok-btn" class="button ok">OK</button>
+<button id="atencao-btn" class="button atencao">Atenção</button>
+<button id="alerta-btn" class="button alerta">Alerta</button>
+<button id="emergencia-btn" class="button emergencia">Emergência</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+    $('#ok-btn').click(function() {
+        publishMessage('ok');
+    });
+
+    $('#atencao-btn').click(function() {
+        publishMessage('atencao');
+    });
+
+    $('#alerta-btn').click(function() {
+        publishMessage('alerta');
+    });
+
+    $('#emergencia-btn').click(function() {
+        publishMessage('emergencia');
+    });
+
+    function publishMessage(type) {
+        var topic = 'umidadeTDE/escutar';
+        var payload = type;
+        socket.emit('publish_mqtt', { 'topic': topic, 'payload': payload });
+
+        console.log("Published to topic: " + topic + ", payload: " + payload);
+    }
+</script>
+{% endblock %}
